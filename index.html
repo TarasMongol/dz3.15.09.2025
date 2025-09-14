@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ch = prompt("Choose the Action's:\n1.+\n2.-\n3.*\n4./")
+        let num_one = prompt("Enter the number: ")
+        let num_two = prompt("Enter the second number: ")
+        num_one = Number(num_one)
+        num_two = Number(num_two)
+
+
+        switch (ch) {
+            case '1':
+                let plus = num_one + num_two
+                document.write(plus)
+                break;
+            case '2':
+                let minus = num_one - num_two
+                document.write(minus)
+                break;
+            case '3':
+                let multiple = num_one * num_two
+                document.write(multiple)
+                break;
+            case '4':
+                let degree = num_one / num_two
+                document.write(degree)
+                break;
+            default:
+                document.write("<h1>Error</h1>")
+        }
+
+
+    </script>
+</body>
+
+</html>
