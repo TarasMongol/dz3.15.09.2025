@@ -30,14 +30,17 @@
                 document.write(multiple)
                 break;
             case '4':
-                let degree =num_one / num_two
-                document.write(degree)
+                if (num_two !== 0) {
+                    let degree = num_one / num_two;
+                    document.write(degree);
+                }
+                else {
+                    document.write("<h1>Error</h1>")
+                }
                 break;
             default:
-                document.write("<h1>Error</h1>")
+                document.write("<h1>Uncorrect Choice</h1>")
         }
-
-
     </script>
 </body>
 
